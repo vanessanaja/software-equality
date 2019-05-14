@@ -1,5 +1,6 @@
 body    {
     background-image: url('./hands.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
     font-family: sans-serif;
     width: 100%;
@@ -31,12 +32,20 @@ footer {
     padding: 2rem;   
     margin: 2rem 0;
 }
-@media (min-width: 800px){
+@media (min-width: 500px){
     main    {
         margin: 5rem;
     }
+    header {
+        margin-top: 4rem;
+    }
+    .body-text {
+        padding: 2rem 3rem;
+    }
+}
+@media (min-width: 800px){
     header  {
-        margin-top: 6rem;
+        margin-top: 7rem;
     }
     h1  {
         font-size: 4rem;
@@ -47,5 +56,8 @@ footer {
     p   {
         font-size: 2rem;
         line-height: 2.5rem;
+    }
+    footer  {
+        padding: 4rem;
     }
 }
