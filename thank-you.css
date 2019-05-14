@@ -1,7 +1,11 @@
 body    {
     background-image: url('./hands.jpg');
+    background-size: cover;
     font-family: sans-serif;
-    margin-bottom: 0;
+    width: 100%;
+    margin: 0;
+    max-width: 70em;
+    margin: 0 auto;
 }
 header  {
     margin: 3rem 1rem;
@@ -19,11 +23,29 @@ h1  {
     padding: 1rem;
 }
 p   {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     line-height: 2rem;
 }
 footer {
     background-color: #5E3E8C;
     padding: 2rem;   
     margin: 2rem 0;
+}
+@media (min-width: 800px){
+    main    {
+        margin: 5rem;
+    }
+    header  {
+        margin-top: 6rem;
+    }
+    h1  {
+        font-size: 4rem;
+    }
+    .body-text  {
+        padding: 1.5rem 3rem;
+    }
+    p   {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
 }
